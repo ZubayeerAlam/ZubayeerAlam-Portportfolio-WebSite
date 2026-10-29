@@ -25,6 +25,7 @@ Goal: all personal content in typed files, separate from layout.
 - [x] `lib/site-config.ts`: site URL (from env), title, description, resume flag
 - [x] Check: `npm run typecheck` passes
 
+<<<<<<< HEAD
 ## Step 2 — Design system and layout shell ✅
 Goal: colours, font, base styles, header and footer.
 - [x] `app/globals.css`: Tailwind v4 `@theme` tokens (colours, radius, container, motion)
@@ -51,6 +52,32 @@ Goal: colours, font, base styles, header and footer.
 - [x] Check: typecheck + lint pass; checked at 375px and 1280px, no horizontal scroll, no console errors
 
 ## Step 5 — Projects 👉
+=======
+## Step 2 — Design system and layout shell 👉
+Goal: colours, font, base styles, header and footer.
+- [ ] `app/globals.css`: Tailwind v4 `@theme` tokens (colours, radius, container, motion)
+- [ ] Font via `next/font` (one family)
+- [ ] `app/layout.tsx`: html/body, font, skip link, base metadata
+- [ ] `components/layout/container.tsx`
+- [ ] `components/layout/navbar.tsx`: `</>` wordmark, links, mobile menu (keyboard + Escape)
+- [ ] `components/layout/footer.tsx`
+- [ ] UI primitives: `button.tsx`, `section-heading.tsx` (short white bar + title), `text-link.tsx` (underline + arrow), `brand-icons.tsx`, `social-links.tsx`
+- [ ] Check: dev server runs; header works at 375px and 1280px
+
+## Step 3 — Hero section
+- [ ] Left: bar, "Hi, I'm Zubayeer", headline, intro, View Projects / Contact buttons
+- [ ] Circle profile photo (`next/image`, priority)
+- [ ] Right column: About me / My work / Follow me mini-blocks
+- [ ] Round blue scroll-down button
+- [ ] Check: mobile stacking; no horizontal scroll at 320px
+
+## Step 4 — About + Skills
+- [ ] About section on the lighter panel
+- [ ] Skills grid grouped by category
+- [ ] Check: readable on mobile
+
+## Step 5 — Projects
+>>>>>>> 2eaf423ff963c1e7ae65ac28b7431ee2a8fd7fdb
 - [ ] `project-row.tsx`: editorial list row (number, title, status badge, summary, tech, arrow)
 - [ ] `status-badge.tsx`: Completed / In development / Coursework (text label, not colour only)
 - [ ] Featured projects list + "Also in progress" compact list
