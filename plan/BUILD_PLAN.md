@@ -91,9 +91,12 @@ Goal: colours, font, base styles, header and footer.
 - Note: LinkedIn blocks automated checks (status 999), so that link could not be verified by script; open it once by hand
 - [x] No console errors, no missing assets
 
-## Step 11 — Deploy readiness 👉
-- [ ] `README.md`: run locally, how to edit content, Vercel deploy guide, custom domain
-- [ ] Final commit
+## Step 11 — Deploy readiness ✅ (code done — your 3 steps below remain)
+- [x] `README.md`: run locally, how to edit content, project structure, Vercel deploy guide, post-deploy checklist, custom domain
+- [x] `package.json` `engines`: Node >=20.9.0 so Vercel uses a compatible version
+- [x] Privacy check: no phone number or secrets in tracked files
+- [x] Check: typecheck + lint + build pass
+- [ ] (You) Final commit
 - [x] (You) GitHub repository connected (`ZubayeerAlam/ZubayeerAlam-Portportfolio-WebSite`)
 - [ ] (You) Push all commits to GitHub (GitHub currently has commits up to Step 8)
 - [ ] (You) Import the repository into Vercel and deploy
