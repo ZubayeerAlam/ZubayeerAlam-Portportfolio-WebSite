@@ -62,12 +62,12 @@ Goal: colours, font, base styles, header and footer.
 - [x] `app/not-found.tsx`
 - [x] Check: `npm run build` pre-renders all 4 detail pages; unknown slug and projects without a page → 404; checked at 375px and 1280px
 
-## Step 7 — Education + Contact 👉
-- [ ] Education & training section (completed vs expected clearly marked)
-- [ ] Contact section: split panel, email link, socials (no form)
-- [ ] Check: mailto link works
+## Step 7 — Education + Contact ✅
+- [x] Education & training section (completed vs expected clearly marked)
+- [x] Contact section: split panel, email link, socials (no form)
+- [x] Check: typecheck + lint pass; mailto and all social links correct; checked at 375px and 1280px, no horizontal scroll, no failed requests
 
-## Step 8 — Motion and polish
+## Step 8 — Motion and polish 👉
 - [ ] `reveal.tsx`: small fade-in on scroll (CSS + IntersectionObserver)
 - [ ] Hover states on rows, links, buttons
 - [ ] `prefers-reduced-motion` turns animation off
