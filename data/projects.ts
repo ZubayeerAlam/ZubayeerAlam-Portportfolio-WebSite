@@ -49,31 +49,34 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "task-manager-firebase",
-    title: "Task Manager (Firebase)",
+    slug: "task-manager",
+    title: "Task Manager App",
     status: "completed",
     track: "flutter",
     summary:
-      "Flutter task manager with user authentication, cloud data storage in Firestore, dark mode and pull-to-refresh.",
-    tech: ["Flutter", "Dart", "Firebase Auth", "Cloud Firestore"],
-    // TODO: add repoUrl when the GitHub link is available.
+      "Flutter task manager built first on a REST API with Provider, then rebuilt with Firebase Auth and Cloud Firestore.",
+    tech: ["Flutter", "Dart", "REST API", "http", "Provider", "SharedPreferences", "Firebase Auth", "Cloud Firestore"],
+    // Links to the REST API version (Ostad module 14). The Firebase version has no public repo yet.
+    repoUrl: "https://github.com/ZubayeerAlam/Ostad-All-Module/tree/main/Module%2014%20with%20provider",
     hasDetailPage: true,
     overview:
-      "A Flutter task manager backed by Firebase. Users sign in, and their tasks are stored in Cloud Firestore.",
+      "A Flutter task manager built in two versions: first against a REST API during the Ostad course, then with Firebase for authentication and cloud data.",
     sections: [
       {
-        heading: "Features",
+        heading: "REST API version (source on GitHub)",
+        items: [
+          "Consumed a REST API for sign-up, login, task lists, creating tasks, updating status and deleting, using the http package, JSON parsing and token headers.",
+          "Wrote a reusable API caller with status-code handling.",
+          "Stored the login token in SharedPreferences and managed sign-in state with Provider.",
+          "Fixed state, response-parsing and storage bugs.",
+        ],
+      },
+      {
+        heading: "Firebase version",
         items: [
           "User authentication with Firebase Auth.",
           "Task data stored in Cloud Firestore.",
           "Dark mode and pull-to-refresh.",
-        ],
-      },
-      {
-        heading: "Earlier version",
-        items: [
-          "Built first against a REST API, using Provider for state and SharedPreferences for local storage.",
-          "Fixed state, response-parsing and storage bugs in that version before moving to Firebase.",
         ],
       },
     ],
@@ -140,15 +143,67 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "cal-ai",
+    title: "Cal AI",
+    // Earlier CVs list this app as in progress; switch to "completed" once it is finished.
+    status: "in-development",
+    track: "flutter",
+    summary:
+      "Calorie tracker with onboarding, calorie and macro goals, food logging, step counting and a dashboard.",
+    tech: ["Flutter", "Dart", "Provider", "go_router", "shared_preferences", "Widget tests"],
+    repoUrl: "https://github.com/ZubayeerAlam/Calorie-ai-app",
+    hasDetailPage: true,
+    overview:
+      "A calorie-tracking app that guides users through onboarding, sets calorie and macro goals, and tracks food and steps on a dashboard.",
+    sections: [
+      {
+        heading: "Features",
+        items: [
+          "Onboarding flow and calorie and macro goals.",
+          "Food logging and step counting.",
+          "Dashboard summarising daily progress.",
+        ],
+      },
+      {
+        heading: "Implementation",
+        items: [
+          "Repository layer over shared_preferences for local data.",
+          "Navigation with go_router and state management with Provider.",
+          "Camera permission handling.",
+          "Widget tests.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "gas-station-finder",
     title: "Gas Station Finder",
     status: "completed",
     track: "flutter",
     summary:
-      "Map-based app for finding nearby petrol stations, integrating Google Maps and the Places API.",
-    tech: ["Flutter", "Google Maps", "Google Places API"],
-    // TODO: add repoUrl when the GitHub link is available.
-    hasDetailPage: false,
+      "Map app that finds nearby petrol stations with the Google Places API and draws driving routes with OSRM.",
+    tech: ["Flutter", "Google Maps", "Google Places API", "OSRM", "Provider"],
+    repoUrl: "https://github.com/ZubayeerAlam/Ostad-All-Module/tree/main/module%2018",
+    hasDetailPage: true,
+    overview:
+      "A map-based app built during the Ostad course (module 18) that shows nearby petrol stations and how to drive to them.",
+    sections: [
+      {
+        heading: "Features",
+        items: [
+          "Reads the device location, with permission handling.",
+          "Calls the Google Places REST API to find nearby gas stations.",
+          "Draws driving routes using the OSRM REST API.",
+        ],
+      },
+      {
+        heading: "Architecture",
+        items: [
+          "Networking separated into an API service and repositories.",
+          "A Provider view model handles loading state and failed requests.",
+        ],
+      },
+    ],
   },
   {
     slug: "habit-tracker-and-crud-apps",
@@ -176,7 +231,6 @@ export const projects: Project[] = [
 
 /** Apps that are in progress; the CV gives no details yet, so only names are shown. */
 export const upcomingProjects: UpcomingProject[] = [
-  { title: "Cal AI App", tech: ["Flutter", "Dart"] },
   { title: "Demo E-commerce App", tech: ["Flutter", "Dart"] },
   { title: "Trip Planner App", tech: ["Flutter", "Dart"] },
   { title: "Dentist App", tech: ["Flutter", "Dart"] },

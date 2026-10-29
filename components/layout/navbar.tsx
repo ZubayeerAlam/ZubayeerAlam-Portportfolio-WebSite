@@ -33,6 +33,7 @@ export function Navbar() {
                 >
                   <FileText aria-hidden="true" className="size-4" />
                   CV
+                  <span className="sr-only">(opens in a new tab)</span>
                 </a>
               </li>
             )}

@@ -14,7 +14,7 @@ Source: the 5 CV .docx files in ~/Downloads. Nothing here is invented. Anything 
 - GitHub: https://github.com/ZubayeerAlam
 - LinkedIn: https://www.linkedin.com/in/zubayeer-alam-8270072b4/
 - Facebook: https://www.facebook.com/Zubu.2005
-- Phone: **not published**
+- Phone: **not shown on the site**, but included in the downloadable CV (`public/cv/Zubayeer_Alam_CV.pdf`) by your choice
 
 ## Education and training
 - **B.Sc. in Computer Science and Engineering**, American International University-Bangladesh (AIUB). Expected graduation: **September 2027**.
@@ -41,23 +41,26 @@ Source: the 5 CV .docx files in ~/Downloads. Nothing here is invented. Anything 
 | # | Project | Track | Status | Repo | Detail page |
 |---|---|---|---|---|---|
 | 1 | Smart AIUB Service Issues | .NET | Completed | ✅ known | Yes |
-| 2 | Task Manager (Firebase) | Flutter | Completed | ⏳ waiting | Yes |
+| 2 | Task Manager App (REST + Firebase) | Flutter | Completed | ✅ known (REST version) | Yes |
 | 3 | Nexora — Nearby Social & Community App | Flutter | In development | ⏳ waiting | Yes |
 | 4 | Food Menu | .NET | Completed | ✅ known | Yes |
-| 5 | Gas Station Finder | Flutter | Completed | ⏳ waiting | No |
-| 6 | Habit Tracker & CRUD Apps | Flutter | Completed | ⏳ waiting | No |
-| 7 | C# AIUB Academic Modules | .NET | Coursework | ✅ known | No |
+| 5 | Cal AI | Flutter | In development (confirm) | ✅ known | Yes |
+| 6 | Gas Station Finder | Flutter | Completed | ✅ known | Yes |
+| 7 | Habit Tracker & CRUD Apps | Flutter | Completed | ⏳ waiting | No |
+| 8 | C# AIUB Academic Modules | .NET | Coursework | ✅ known | No |
 
-Also in progress (name only, no details in CV): Cal AI App, Demo E-commerce App, Trip Planner App, Dentist App.
+Also in progress (name only, no details in CV): Demo E-commerce App, Trip Planner App, Dentist App.
 
 Known repo URLs:
 - https://github.com/ZubayeerAlam/Smart-AIUB-Service-Issues-.NET-Web-APP
 - https://github.com/ZubayeerAlam/Food-Menu-.NET-Web-App
 - https://github.com/ZubayeerAlam/C-AIUB-All-Module
+- https://github.com/ZubayeerAlam/Ostad-All-Module/tree/main/Module%2014%20with%20provider (Task Manager, REST version)
+- https://github.com/ZubayeerAlam/Ostad-All-Module/tree/main/module%2018 (Gas Station Finder)
+- https://github.com/ZubayeerAlam/Calorie-ai-app (Cal AI)
 
 ## Missing
-- Flutter project repo URLs
-- resume.pdf
+- Repo URLs for Nexora and Habit Tracker & CRUD Apps
 - Screenshots for any project (none exist → text-led project rows)
 - Live demo links (none listed)
 - Production domain

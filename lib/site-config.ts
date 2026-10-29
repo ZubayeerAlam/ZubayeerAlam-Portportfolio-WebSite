@@ -25,9 +25,9 @@ export const siteConfig = {
   description:
     "Portfolio of Zubayeer Alam, a Computer Science and Engineering student at AIUB building Flutter mobile apps and ASP.NET Core web applications.",
   locale: "en_US",
-  /** Set to true after adding public/resume.pdf. */
-  resumeAvailable: false,
-  resumePath: "/resume.pdf",
+  /** Set to true once the CV PDF is in public/cv/. */
+  resumeAvailable: true,
+  resumePath: "/cv/Zubayeer_Alam_CV.pdf",
   nav: [
     { label: "About", href: "/#about" },
     { label: "Projects", href: "/#projects" },

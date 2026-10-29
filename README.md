@@ -62,8 +62,10 @@ The Flutter projects have `// TODO` comments where their GitHub links go.
 
 ### Add your CV
 
-1. Save your CV as `public/resume.pdf`.
-2. In `lib/site-config.ts`, set `resumeAvailable: true`.
+1. Save your CV as a PDF in the `public/cv/` folder, as `Zubayeer_Alam_CV.pdf`. To use a different file name, update `resumePath` in `lib/site-config.ts`.
+2. In `lib/site-config.ts`, make sure `resumeAvailable` is `true`.
+
+To update the CV later, replace the PDF in `public/cv/` with the new version (same file name).
 
 A "CV" link then appears in the menu and the Contact section.
 
@@ -87,7 +89,8 @@ components/
 data/                 All site content
 lib/                  Site config and small helpers
 types/                Content types
-public/               Images (and resume.pdf when added)
+public/               Images
+  cv/                 Downloadable CV (Zubayeer_Alam_CV.pdf)
 assets/fonts/         Fonts for the share image (SIL Open Font License)
 plan/                 Build plan, verified content and design notes
 ```

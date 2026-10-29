@@ -76,6 +76,7 @@ export function MobileMenu() {
                   className="block py-4 text-lg font-semibold"
                 >
                   Download CV
+                  <span className="sr-only">(opens in a new tab)</span>
                 </a>
               </li>
             )}

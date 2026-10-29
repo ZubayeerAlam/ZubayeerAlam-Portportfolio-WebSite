@@ -91,14 +91,14 @@ Goal: colours, font, base styles, header and footer.
 - Note: LinkedIn blocks automated checks (status 999), so that link could not be verified by script; open it once by hand
 - [x] No console errors, no missing assets
 
-## Step 11 — Deploy readiness ✅ (code done — your 3 steps below remain)
+## Step 11 — Deploy readiness 👉 (only the Vercel deploy remains)
 - [x] `README.md`: run locally, how to edit content, project structure, Vercel deploy guide, post-deploy checklist, custom domain
 - [x] `package.json` `engines`: Node >=20.9.0 so Vercel uses a compatible version
 - [x] Privacy check: no phone number or secrets in tracked files
 - [x] Check: typecheck + lint + build pass
-- [ ] (You) Final commit
+- [x] (You) Final commit
 - [x] (You) GitHub repository connected (`ZubayeerAlam/ZubayeerAlam-Portportfolio-WebSite`)
-- [ ] (You) Push all commits to GitHub (GitHub currently has commits up to Step 8)
+- [x] (You) Push all commits to GitHub (verified: GitHub matches local `main`)
 - [ ] (You) Import the repository into Vercel and deploy
 
 ---
@@ -106,8 +106,12 @@ Goal: colours, font, base styles, header and footer.
 ## Changes after review
 - [x] Hero heading → "Hi, I am Zubayeer, a Full Stack App Developer". Stored as `greeting` in `data/profile.ts`.
   Only the hero changed; tab title, footer, share image and search data keep the headline "Flutter & .NET Developer".
+- [x] CV download: `public/cv/Zubayeer_Alam_CV.pdf` + `resumeAvailable: true`. Button shows in the desktop menu ("CV"), mobile menu ("Download CV") and Contact ("Download my CV"); opens in a new tab.
+- [x] Flutter projects updated from the new CV: Task Manager App (REST + Firebase versions, `/projects/task-manager`), Cal AI (moved from "Also in progress", own page), Gas Station Finder (OSRM routes, own page). GitHub links go straight to the right folder of `Ostad-All-Module` or to `Calorie-ai-app`. 6 project pages now.
 
 ## Waiting on you
-- [ ] GitHub URLs for the Flutter projects (Task Manager, Nexora, Gas Station Finder, Habit Tracker / CRUD)
-- [ ] `resume.pdf` — the CV link stays hidden until this file is added
+- [x] GitHub URLs for Task Manager, Gas Station Finder and Cal AI (from the new CV)
+- [ ] GitHub URLs still missing: Nexora, Habit Tracker & CRUD Apps
+- [ ] Cal AI status: shown as "In development" — confirm if it's finished
+- [x] CV PDF (`public/cv/Zubayeer_Alam_CV.pdf`) — added from `Zubayeer_Alam_CV_Backend (1).docx` (1 page, A4, phone number kept by your choice); CV button turned on
 - [ ] Production domain — needed later for canonical URL and sitemap
