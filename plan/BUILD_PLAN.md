@@ -55,15 +55,14 @@ Goal: colours, font, base styles, header and footer.
 - [x] `status-badge.tsx`: Completed / In development / Coursework (text label, not colour only)
 - [x] Featured projects list + "Also in progress" compact list
 - [x] Check: typecheck + lint pass; all 3 repo URLs return 200 and stay clickable over the row link; checked at 375px and 1280px, no console errors
-- Note: rows for Smart AIUB, Task Manager, Nexora and Food Menu link to `/projects/[slug]`, which 404s until Step 6
 
-## Step 6 — Project detail pages 👉
-- [ ] `app/projects/[slug]/page.tsx` with `generateStaticParams` + `generateMetadata`
-- [ ] Shows only sections that have real content
-- [ ] `app/not-found.tsx`
-- [ ] Check: every detail page builds statically; unknown slug → 404
+## Step 6 — Project detail pages ✅
+- [x] `app/projects/[slug]/page.tsx` with `generateStaticParams` + `generateMetadata`
+- [x] Shows only sections that have real content; tech stack + links side panel; Next project link
+- [x] `app/not-found.tsx`
+- [x] Check: `npm run build` pre-renders all 4 detail pages; unknown slug and projects without a page → 404; checked at 375px and 1280px
 
-## Step 7 — Education + Contact
+## Step 7 — Education + Contact 👉
 - [ ] Education & training section (completed vs expected clearly marked)
 - [ ] Contact section: split panel, email link, socials (no form)
 - [ ] Check: mailto link works

@@ -1,12 +1,8 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import type { Project, ProjectTrack } from "@/types/content";
+import type { Project } from "@/types/content";
 import { StatusBadge } from "./status-badge";
-
-const trackLabels: Record<ProjectTrack, string> = {
-  dotnet: ".NET",
-  flutter: "Flutter",
-};
+import { trackLabels } from "./track-labels";
 
 interface ProjectRowProps {
   project: Project;
