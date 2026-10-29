@@ -7,6 +7,8 @@ interface ProjectPageProps {
   params: Promise<{ slug: string }>;
 }
 
+const shareImage = { url: "/opengraph-image", width: 1200, height: 630, alt: "Zubayeer Alam — portfolio" };
+
 // Only the slugs returned below exist; any other slug renders the 404 page.
 export const dynamicParams = false;
 
@@ -23,6 +25,20 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     title: project.title,
     description: project.summary,
     alternates: { canonical: `/projects/${project.slug}` },
+    // Overriding openGraph/twitter replaces the inherited values, so the shared share image is repeated here.
+    openGraph: {
+      type: "article",
+      url: `/projects/${project.slug}`,
+      title: project.title,
+      description: project.summary,
+      images: [shareImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: project.title,
+      description: project.summary,
+      images: [shareImage],
+    },
   };
 }
 

@@ -1,10 +1,26 @@
 import { profile } from "@/data/profile";
 
 /**
- * Site-wide settings. Set NEXT_PUBLIC_SITE_URL in Vercel once the production domain is known.
+ * Public URL of the site, used for canonical links, the sitemap and Open Graph.
+ * 1. NEXT_PUBLIC_SITE_URL (set this once you have a custom domain)
+ * 2. Vercel's production URL (set automatically on Vercel)
+ * 3. localhost for local development
+ */
+function resolveSiteUrl(): string {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL;
+  if (explicit) return explicit.replace(/\/$/, "");
+
+  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  if (vercel) return `https://${vercel}`;
+
+  return "http://localhost:3000";
+}
+
+/**
+ * Site-wide settings.
  */
 export const siteConfig = {
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
+  url: resolveSiteUrl(),
   title: `${profile.name} — ${profile.headline}`,
   description:
     "Portfolio of Zubayeer Alam, a Computer Science and Engineering student at AIUB building Flutter mobile apps and ASP.NET Core web applications.",

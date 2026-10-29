@@ -73,14 +73,16 @@ Goal: colours, font, base styles, header and footer.
 - [x] `prefers-reduced-motion` turns animation off
 - [x] Visual review against reference; checked reveal at 1280px (off-screen content starts hidden, ends fully visible), keyboard focus on project rows
 
-## Step 9 — SEO 👉
-- [ ] Metadata API: title template, description, Open Graph, Twitter
-- [ ] `app/opengraph-image.tsx` (generated share image)
-- [ ] `app/icon.svg` favicon
-- [ ] `app/robots.ts`, `app/sitemap.ts`
-- [ ] Person JSON-LD (verified fields only)
+## Step 9 — SEO ✅
+- [x] Metadata API: title template, description, canonical, Open Graph, Twitter (home + each project page)
+- [x] `app/opengraph-image.tsx`: 1200×630 share image with photo, built with Manrope (`assets/fonts/`, OFL licence included)
+- [x] `app/icon.svg` favicon
+- [x] `app/robots.ts`, `app/sitemap.ts`
+- [x] Person JSON-LD (verified fields only)
+- [x] Site URL: `NEXT_PUBLIC_SITE_URL` → Vercel production URL → localhost
+- [x] Check: build passes; inspected generated tags, robots.txt, sitemap.xml, JSON-LD and share image
 
-## Step 10 — Testing
+## Step 10 — Testing 👉
 - [ ] `npm run typecheck`, `npm run lint`, `npm run build` all pass
 - [ ] Browser check at 320 / 375 / 390 / 768 / 1024 / 1280 / 1440 px
 - [ ] Keyboard-only navigation, focus rings visible
