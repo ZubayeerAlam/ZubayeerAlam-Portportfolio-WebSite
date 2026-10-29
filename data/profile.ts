@@ -12,7 +12,6 @@ export const profile: Profile = {
   about: [
     "I'm a Computer Science and Engineering student at American International University-Bangladesh (AIUB), graduating in September 2027. I completed the Ostad Flutter App Development course (Batch 17).",
     "On mobile, I build Flutter apps with Firebase, REST APIs and Google Maps, using Riverpod or Provider for state and Clean Architecture to keep features separate. On the backend, I work with C#, ASP.NET Core MVC, Entity Framework Core and SQL Server, most recently on a role-based issue-tracking web app with authorization and xUnit tests.",
-    "I document what I learn publicly through a 100 Days of Code series on LinkedIn.",
   ],
   lookingFor:
     "Open to Flutter or .NET backend internships, junior developer roles and remote opportunities.",

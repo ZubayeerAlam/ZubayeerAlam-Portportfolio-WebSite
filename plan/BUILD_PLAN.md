@@ -108,6 +108,7 @@ Goal: colours, font, base styles, header and footer.
   Only the hero changed; tab title, footer, share image and search data keep the headline "Flutter & .NET Developer".
 - [x] CV download: `public/cv/Zubayeer_Alam_CV.pdf` + `resumeAvailable: true`. Button shows in the desktop menu ("CV"), mobile menu ("Download CV") and Contact ("Download my CV"); opens in a new tab.
 - [x] Flutter projects updated from the new CV: Task Manager App (REST + Firebase versions, `/projects/task-manager`), Cal AI (moved from "Also in progress", own page), Gas Station Finder (OSRM routes, own page). GitHub links go straight to the right folder of `Ostad-All-Module` or to `Calorie-ai-app`. 6 project pages now.
+- [x] Removed the "100 Days of Code on LinkedIn" sentence from About (`data/profile.ts`).
 
 ## Waiting on you
 - [x] GitHub URLs for Task Manager, Gas Station Finder and Cal AI (from the new CV)
