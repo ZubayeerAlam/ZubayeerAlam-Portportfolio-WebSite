@@ -42,7 +42,7 @@ export function ProjectDetails({ project, nextProject }: ProjectDetailsProps) {
       <Container className="grid gap-12 py-14 sm:py-20 lg:grid-cols-12 lg:gap-8">
         <div className="space-y-12 lg:col-span-8">
           {project.sections?.map((section) => (
-            <section key={section.heading} aria-labelledby={`section-${slugify(section.heading)}`}>
+            <section key={section.heading} className="reveal" aria-labelledby={`section-${slugify(section.heading)}`}>
               <h2 id={`section-${slugify(section.heading)}`} className="text-2xl font-bold tracking-tight">
                 {section.heading}
               </h2>

@@ -20,7 +20,7 @@ export function AboutSection() {
       <Container className="grid gap-12 lg:grid-cols-12 lg:gap-8">
         <SectionHeading id="about-title" title="About me" className="lg:col-span-4" />
 
-        <div className="lg:col-span-8">
+        <div className="reveal lg:col-span-8">
           <div className="space-y-5 text-base leading-relaxed text-muted sm:text-lg">
             {profile.about.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>

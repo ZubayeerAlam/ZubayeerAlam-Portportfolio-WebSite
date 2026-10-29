@@ -12,7 +12,7 @@ interface SectionHeadingProps {
 /** Section title with the short white bar above it, as in the reference design. */
 export function SectionHeading({ id, title, description, as: Tag = "h2", className }: SectionHeadingProps) {
   return (
-    <div className={cn("max-w-2xl", className)}>
+    <div className={cn("reveal max-w-2xl", className)}>
       <span aria-hidden="true" className="mb-6 block h-[3px] w-14 bg-ink" />
       <Tag id={id} className="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
         {title}

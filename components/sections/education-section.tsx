@@ -12,7 +12,7 @@ export function EducationSection() {
           {education.map((item) => (
             <li
               key={item.title}
-              className="grid gap-3 border-t border-line py-8 first:border-t-0 first:pt-0 sm:grid-cols-[1fr_auto] sm:gap-x-8"
+              className="reveal grid gap-3 border-t border-line py-8 first:border-t-0 first:pt-0 sm:grid-cols-[1fr_auto] sm:gap-x-8"
             >
               <div>
                 <h3 className="text-xl font-bold tracking-tight">{item.title}</h3>

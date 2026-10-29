@@ -14,7 +14,7 @@ export function SkillsSection() {
 
         <div className="mt-12 grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group) => (
-            <div key={group.title} className="border-t border-line py-6">
+            <div key={group.title} className="reveal border-t border-line py-6">
               <h3 className="text-xs font-bold tracking-[0.12em] text-ink uppercase">{group.title}</h3>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {group.skills.map((skill) => (

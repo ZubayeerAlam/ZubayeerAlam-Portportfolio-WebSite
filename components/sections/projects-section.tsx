@@ -20,7 +20,7 @@ export function ProjectsSection() {
         </ol>
 
         {upcomingProjects.length > 0 && (
-          <div className="mt-14">
+          <div className="reveal mt-14">
             <h3 className="text-xs font-bold tracking-[0.12em] text-ink uppercase">Also in progress</h3>
             <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {upcomingProjects.map((project) => (

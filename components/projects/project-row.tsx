@@ -17,7 +17,7 @@ export function ProjectRow({ project, index }: ProjectRowProps) {
   const detailHref = project.hasDetailPage ? `/projects/${project.slug}` : undefined;
 
   return (
-    <li className="group relative grid gap-4 border-t border-line py-8 transition-colors duration-(--duration-fast) sm:grid-cols-[4rem_1fr_auto] sm:gap-6 has-[a.stretched:hover]:bg-surface/40">
+    <li className="reveal group relative grid gap-4 border-t border-line py-8 transition-colors duration-(--duration-fast) sm:grid-cols-[4rem_1fr_auto] sm:gap-6 has-[a.stretched:focus-visible]:bg-surface/40 has-[a.stretched:hover]:bg-surface/40">
       <span aria-hidden="true" className="text-sm font-semibold text-muted tabular-nums sm:pt-1.5">
         {String(index + 1).padStart(2, "0")}
       </span>
@@ -77,7 +77,7 @@ export function ProjectRow({ project, index }: ProjectRowProps) {
       {detailHref && (
         <ArrowRight
           aria-hidden="true"
-          className="hidden size-6 text-muted transition-[color,translate] duration-(--duration-fast) group-has-[a.stretched:hover]:translate-x-1 group-has-[a.stretched:hover]:text-ink sm:mt-1.5 sm:block"
+          className="hidden size-6 text-muted transition-[color,translate] duration-(--duration-fast) group-has-[a.stretched:hover]:translate-x-1 group-has-[a.stretched:hover]:text-ink group-has-[a.stretched:focus-visible]:translate-x-1 group-has-[a.stretched:focus-visible]:text-ink sm:mt-1.5 sm:block"
         />
       )}
     </li>

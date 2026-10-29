@@ -67,13 +67,13 @@ Goal: colours, font, base styles, header and footer.
 - [x] Contact section: split panel, email link, socials (no form)
 - [x] Check: typecheck + lint pass; mailto and all social links correct; checked at 375px and 1280px, no horizontal scroll, no failed requests
 
-## Step 8 — Motion and polish 👉
-- [ ] `reveal.tsx`: small fade-in on scroll (CSS + IntersectionObserver)
-- [ ] Hover states on rows, links, buttons
-- [ ] `prefers-reduced-motion` turns animation off
-- [ ] Visual review against reference
+## Step 8 — Motion and polish ✅
+- [x] Scroll reveal: `.reveal` class in `globals.css` using CSS scroll-driven animation (no JavaScript; content stays visible where unsupported)
+- [x] Hover states on rows, links, buttons; project rows also highlight on keyboard focus
+- [x] `prefers-reduced-motion` turns animation off
+- [x] Visual review against reference; checked reveal at 1280px (off-screen content starts hidden, ends fully visible), keyboard focus on project rows
 
-## Step 9 — SEO
+## Step 9 — SEO 👉
 - [ ] Metadata API: title template, description, Open Graph, Twitter
 - [ ] `app/opengraph-image.tsx` (generated share image)
 - [ ] `app/icon.svg` favicon
