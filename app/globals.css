@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Design tokens. See plan/DESIGN.md. */
+@theme {
+  --color-canvas: #1a1c21;
+  --color-surface: #22252c;
+  --color-surface-2: #2b2f38;
+  --color-line: #30343d;
+  --color-ink: #f3f4f6;
+  --color-muted: #a1a7b3;
+  --color-accent: #2563eb;
+  --color-accent-hover: #3b82f6;
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-panel: 0.5rem;
+
+  --ease-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-slow: 500ms;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    /* Keeps anchored sections clear of the sticky header. */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-hover);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: #fff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

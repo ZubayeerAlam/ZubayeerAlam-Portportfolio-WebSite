@@ -25,18 +25,19 @@ Goal: all personal content in typed files, separate from layout.
 - [x] `lib/site-config.ts`: site URL (from env), title, description, resume flag
 - [x] Check: `npm run typecheck` passes
 
-## Step 2 — Design system and layout shell 👉
+## Step 2 — Design system and layout shell ✅
 Goal: colours, font, base styles, header and footer.
-- [ ] `app/globals.css`: Tailwind v4 `@theme` tokens (colours, radius, container, motion)
-- [ ] Font via `next/font` (one family)
-- [ ] `app/layout.tsx`: html/body, font, skip link, base metadata
-- [ ] `components/layout/container.tsx`
-- [ ] `components/layout/navbar.tsx`: `</>` wordmark, links, mobile menu (keyboard + Escape)
-- [ ] `components/layout/footer.tsx`
-- [ ] UI primitives: `button.tsx`, `section-heading.tsx` (short white bar + title), `text-link.tsx` (underline + arrow), `brand-icons.tsx`, `social-links.tsx`
-- [ ] Check: dev server runs; header works at 375px and 1280px
+- [x] `app/globals.css`: Tailwind v4 `@theme` tokens (colours, radius, container, motion)
+- [x] Font via `next/font` (one family)
+- [x] `app/layout.tsx`: html/body, font, skip link, base metadata
+- [x] `components/layout/container.tsx`
+- [x] `components/layout/navbar.tsx` + `mobile-menu.tsx` + `wordmark.tsx`: `</>` wordmark, links, mobile menu (Escape closes, focus returns)
+- [x] `components/layout/footer.tsx`
+- [x] UI primitives: `button.tsx`, `section-heading.tsx` (short white bar + title), `text-link.tsx` (underline + arrow), `brand-icons.tsx`, `social-links.tsx`
+- [x] Check: typecheck + lint pass; header, mobile menu, anchor links and footer checked at 375px and 1280px; no console errors
+- Note: `app/page.tsx` is a temporary preview page, replaced in Step 3
 
-## Step 3 — Hero section
+## Step 3 — Hero section 👉
 - [ ] Left: bar, "Hi, I'm Zubayeer", headline, intro, View Projects / Contact buttons
 - [ ] Circle profile photo (`next/image`, priority)
 - [ ] Right column: About me / My work / Follow me mini-blocks
