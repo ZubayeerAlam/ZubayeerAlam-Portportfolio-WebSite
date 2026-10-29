@@ -37,14 +37,15 @@ Goal: colours, font, base styles, header and footer.
 - [x] Check: typecheck + lint pass; header, mobile menu, anchor links and footer checked at 375px and 1280px; no console errors
 - Note: `app/page.tsx` is a temporary preview page, replaced in Step 3
 
-## Step 3 — Hero section 👉
-- [ ] Left: bar, "Hi, I'm Zubayeer", headline, intro, View Projects / Contact buttons
-- [ ] Circle profile photo (`next/image`, priority)
-- [ ] Right column: About me / My work / Follow me mini-blocks
-- [ ] Round blue scroll-down button
-- [ ] Check: mobile stacking; no horizontal scroll at 320px
+## Step 3 — Hero section ✅
+- [x] Left: bar, "Hi, I'm Zubayeer", headline, intro, View Projects / Contact buttons
+- [x] Circle profile photo (`next/image`, `preload`)
+- [x] Right column: About me / My work / Follow me mini-blocks
+- [x] Round blue scroll-down button
+- [x] Check: typecheck + lint pass; checked at 320 / 390 / 768 / 1280px, no horizontal scroll, no console errors
+- Note: the Learn more / Browse projects / Contact links point to sections built in Steps 4–7
 
-## Step 4 — About + Skills
+## Step 4 — About + Skills 👉
 - [ ] About section on the lighter panel
 - [ ] Skills grid grouped by category
 - [ ] Check: readable on mobile
