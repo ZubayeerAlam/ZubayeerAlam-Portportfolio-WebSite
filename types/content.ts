@@ -10,6 +10,8 @@ export interface Profile {
   name: string;
   firstName: string;
   headline: string;
+  /** Main heading on the home page hero. */
+  greeting: string;
   location: string;
   email: string;
   /** Short hero introduction (one or two sentences). */

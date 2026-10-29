@@ -38,7 +38,8 @@ Goal: colours, font, base styles, header and footer.
 - Note: `app/page.tsx` is a temporary preview page, replaced in Step 3
 
 ## Step 3 — Hero section ✅
-- [x] Left: bar, "Hi, I'm Zubayeer", headline, intro, View Projects / Contact buttons
+- [x] Left: bar, heading, intro, View Projects / Contact buttons
+- [x] Heading changed after review to "Hi, I am Zubayeer, a Full Stack App Developer" (`greeting` in `data/profile.ts`; hero only)
 - [x] Circle profile photo (`next/image`, `preload`)
 - [x] Right column: About me / My work / Follow me mini-blocks
 - [x] Round blue scroll-down button
@@ -82,19 +83,26 @@ Goal: colours, font, base styles, header and footer.
 - [x] Site URL: `NEXT_PUBLIC_SITE_URL` → Vercel production URL → localhost
 - [x] Check: build passes; inspected generated tags, robots.txt, sitemap.xml, JSON-LD and share image
 
-## Step 10 — Testing 👉
-- [ ] `npm run typecheck`, `npm run lint`, `npm run build` all pass
-- [ ] Browser check at 320 / 375 / 390 / 768 / 1024 / 1280 / 1440 px
-- [ ] Keyboard-only navigation, focus rings visible
-- [ ] All links (GitHub, LinkedIn, Facebook, repos, mailto), 404 page
-- [ ] No console errors, no missing assets
+## Step 10 — Testing ✅
+- [x] `npm run typecheck`, `npm run lint`, `npm run build` all pass
+- [x] Browser check at 320 / 375 / 390 / 768 / 1024 / 1280 / 1440 px on the production build: no horizontal scroll, no element past the viewport, photo loads (fixed: hero heading wrapped to 4 lines at 1024px)
+- [x] Keyboard-only navigation, focus rings visible (Tab order: skip link → name → menu → buttons → side links)
+- [x] All links: 5 internal pages 200, all anchors exist, GitHub + Facebook 200, mailto correct, unknown URLs 404
+- Note: LinkedIn blocks automated checks (status 999), so that link could not be verified by script; open it once by hand
+- [x] No console errors, no missing assets
 
-## Step 11 — Deploy readiness
+## Step 11 — Deploy readiness 👉
 - [ ] `README.md`: run locally, how to edit content, Vercel deploy guide, custom domain
 - [ ] Final commit
-- [ ] (You) push to GitHub and import into Vercel
+- [x] (You) GitHub repository connected (`ZubayeerAlam/ZubayeerAlam-Portportfolio-WebSite`)
+- [ ] (You) Push all commits to GitHub (GitHub currently has commits up to Step 8)
+- [ ] (You) Import the repository into Vercel and deploy
 
 ---
+
+## Changes after review
+- [x] Hero heading → "Hi, I am Zubayeer, a Full Stack App Developer". Stored as `greeting` in `data/profile.ts`.
+  Only the hero changed; tab title, footer, share image and search data keep the headline "Flutter & .NET Developer".
 
 ## Waiting on you
 - [ ] GitHub URLs for the Flutter projects (Task Manager, Nexora, Gas Station Finder, Habit Tracker / CRUD)

@@ -4,7 +4,8 @@ Source: the 5 CV .docx files in ~/Downloads. Nothing here is invented. Anything 
 
 ## Identity
 - **Name:** Zubayeer Alam
-- **Headline:** Flutter & .NET Developer
+- **Headline:** Flutter & .NET Developer (tab title, footer, share image, search data)
+- **Hero heading:** Hi, I am Zubayeer, a Full Stack App Developer (home page hero only)
 - **Location:** Dhaka, Bangladesh
 - **Looking for:** Flutter / backend (.NET) internship or junior developer role, including remote
 

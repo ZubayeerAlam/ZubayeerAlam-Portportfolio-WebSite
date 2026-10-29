@@ -29,9 +29,9 @@ export function HeroSection() {
           <span aria-hidden="true" className="mb-8 block h-[3px] w-16 bg-ink" />
           <h1
             id="hero-title"
-            className="text-4xl leading-[1.1] font-bold tracking-tight text-balance sm:text-5xl lg:text-[3.5rem]"
+            className="text-4xl leading-[1.1] font-bold tracking-tight text-balance sm:text-5xl lg:text-[2.75rem] xl:text-[3.5rem]"
           >
-            Hi, I&apos;m {profile.firstName}, a {profile.headline}
+            {profile.greeting}
           </h1>
           <p className="mt-6 max-w-md text-base leading-relaxed text-muted sm:text-lg">{profile.intro}</p>
           <p className="mt-4 inline-flex items-center gap-1.5 text-sm text-muted">

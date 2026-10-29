@@ -4,6 +4,7 @@ export const profile: Profile = {
   name: "Zubayeer Alam",
   firstName: "Zubayeer",
   headline: "Flutter & .NET Developer",
+  greeting: "Hi, I am Zubayeer, a Full Stack App Developer",
   location: "Dhaka, Bangladesh",
   email: "zubayeer5000@gmail.com",
   intro:
