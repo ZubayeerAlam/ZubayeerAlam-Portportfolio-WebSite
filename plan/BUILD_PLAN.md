@@ -45,12 +45,12 @@ Goal: colours, font, base styles, header and footer.
 - [x] Check: typecheck + lint pass; checked at 320 / 390 / 768 / 1280px, no horizontal scroll, no console errors
 - Note: the Learn more / Browse projects / Contact links point to sections built in Steps 4–7
 
-## Step 4 — About + Skills 👉
-- [ ] About section on the lighter panel
-- [ ] Skills grid grouped by category
-- [ ] Check: readable on mobile
+## Step 4 — About + Skills ✅
+- [x] About section on the lighter panel: bio paragraphs, key facts list, LinkedIn link
+- [x] Skills grid grouped by category
+- [x] Check: typecheck + lint pass; checked at 375px and 1280px, no horizontal scroll, no console errors
 
-## Step 5 — Projects
+## Step 5 — Projects 👉
 - [ ] `project-row.tsx`: editorial list row (number, title, status badge, summary, tech, arrow)
 - [ ] `status-badge.tsx`: Completed / In development / Coursework (text label, not colour only)
 - [ ] Featured projects list + "Also in progress" compact list
