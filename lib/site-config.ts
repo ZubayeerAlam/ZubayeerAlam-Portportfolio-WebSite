@@ -27,7 +27,7 @@ export const siteConfig = {
   locale: "en_US",
   /** Set to true once the CV PDF is in public/cv/. */
   resumeAvailable: true,
-  resumePath: "/cv/Zubayeer_Alam_CV.pdf",
+  resumePath: "/cv/Zubayeer_CV.pdf",
   nav: [
     { label: "About", href: "/#about" },
     { label: "Projects", href: "/#projects" },

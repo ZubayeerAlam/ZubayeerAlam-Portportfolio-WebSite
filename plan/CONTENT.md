@@ -14,7 +14,7 @@ Source: the 5 CV .docx files in ~/Downloads. Nothing here is invented. Anything 
 - GitHub: https://github.com/ZubayeerAlam
 - LinkedIn: https://www.linkedin.com/in/zubayeer-alam-8270072b4/
 - Facebook: https://www.facebook.com/Zubu.2005
-- Phone: **not shown on the site**, but included in the downloadable CV (`public/cv/Zubayeer_Alam_CV.pdf`) by your choice
+- Phone: **not shown on the site**, but included in the downloadable CV (`public/cv/Zubayeer_CV.pdf`) by your choice
 
 ## Education and training
 - **B.Sc. in Computer Science and Engineering**, American International University-Bangladesh (AIUB). Expected graduation: **September 2027**.
